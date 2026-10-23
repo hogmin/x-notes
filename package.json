@@ -1,0 +1,51 @@
+{
+  "name": "x-notes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "bun check"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "^6.6.2",
+    "@mikro-orm/mssql": "^6.6.13",
+    "@reduxjs/toolkit": "^2.11.1",
+    "antd": "^6.1.0",
+    "bcryptjs": "^3.0.3",
+    "clsx": "^2.1.1",
+    "formik": "^2.4.9",
+    "msnodesqlv8": "^5.1.9",
+    "mssql": "^12.5.0",
+    "next": "^16.2.4",
+    "next-themes": "^0.4.6",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "react-markdown": "^10.1.0",
+    "react-redux": "^9.2.0",
+    "reflect-metadata": "^0.2.2",
+    "rehype-sanitize": "^6.0.0",
+    "remark-gfm": "^4.0.1",
+    "uuid": "^14.0.0",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "^6.6.2",
+    "@mikro-orm/migrations": "^6.6.2",
+    "@tailwindcss/postcss": "^4",
+    "@types/mssql": "^12.3.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "ajv": "^8.17.1",
+    "baseline-browser-mapping": "^2.10.27",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.10",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5",
+    "@types/bun": "latest"
+  }
+}

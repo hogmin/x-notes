@@ -1,0 +1,134 @@
+.page {
+  min-height: calc(100vh - 58px);
+  padding: 16px;
+}
+
+.shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.meta {
+  color: var(--app-text-muted);
+}
+
+.full {
+  width: 100%;
+}
+
+.mdPreview {
+  min-height: 360px;
+  padding: 16px;
+  border: 1px solid var(--app-border);
+  border-radius: 6px;
+  background: var(--app-surface-2);
+  color: var(--app-text);
+  line-height: 1.65;
+  overflow-x: auto;
+}
+
+.mdPreview > :first-child {
+  margin-top: 0;
+}
+
+.mdPreview > :last-child {
+  margin-bottom: 0;
+}
+
+.mdPreview h1,
+.mdPreview h2,
+.mdPreview h3,
+.mdPreview h4,
+.mdPreview h5,
+.mdPreview h6 {
+  margin: 1.25em 0 0.55em;
+  color: var(--app-text);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.mdPreview h1 {
+  padding-bottom: 0.28em;
+  border-bottom: 1px solid var(--app-border);
+  font-size: 2rem;
+}
+
+.mdPreview h2 {
+  padding-bottom: 0.24em;
+  border-bottom: 1px solid var(--app-border);
+  font-size: 1.5rem;
+}
+
+.mdPreview h3 {
+  font-size: 1.25rem;
+}
+
+.mdPreview h4 {
+  font-size: 1.1rem;
+}
+
+.mdPreview h5,
+.mdPreview h6 {
+  font-size: 1rem;
+}
+
+.mdPreview p {
+  margin: 0 0 1em;
+}
+
+.mdPreview a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.mdPreview blockquote {
+  margin: 1em 0;
+  padding: 0.1em 0 0.1em 1em;
+  border-left: 4px solid var(--app-border);
+  color: var(--app-text-muted);
+}
+
+.mdPreview table {
+  margin: 1em 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mdPreview th,
+.mdPreview td {
+  padding: 8px;
+  border: 1px solid var(--app-border);
+}
+
+.mdPreview th {
+  background: var(--app-surface);
+  font-weight: 700;
+}
+
+.mdPreview ul,
+.mdPreview ol {
+  margin: 0 0 1em;
+  padding-left: 1.5rem;
+}
+
+.mdPreview code {
+  padding: 0.16em 0.34em;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--app-border) 45%, transparent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.mdPreview pre {
+  margin: 1em 0;
+  padding: 12px;
+  overflow-x: auto;
+  border: 1px solid var(--app-border);
+  border-radius: 6px;
+  background: var(--app-surface);
+}
+
+.mdPreview pre code {
+  padding: 0;
+  background: transparent;
+}

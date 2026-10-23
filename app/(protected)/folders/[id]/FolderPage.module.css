@@ -1,0 +1,17 @@
+.page {
+  min-height: calc(100vh - 58px);
+  padding: 16px;
+}
+
+.shell {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.full {
+  width: 100%;
+}
+
+.meta {
+  color: var(--app-text-muted);
+}

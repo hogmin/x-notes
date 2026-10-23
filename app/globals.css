@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --app-bg: #f6f8fb;
+  --app-surface: #ffffff;
+  --app-surface-2: #f8fafc;
+  --app-border: rgba(15, 23, 42, 0.12);
+  --app-text: rgba(15, 23, 42, 0.92);
+  --app-text-muted: rgba(71, 85, 105, 0.76);
+  --app-header-bg: rgba(255, 255, 255, 0.82);
+  --app-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --app-bg: #0f172a !important;
+  --app-surface: #111827 !important;
+  --app-surface-2: #172033;
+  --app-border: rgba(148, 163, 184, 0.22);
+  --app-text: rgba(248, 250, 252, 0.94);
+  --app-text-muted: rgba(203, 213, 225, 0.74);
+  --app-header-bg: rgba(15, 23, 42, 0.84);
+  --app-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--app-bg);
+  color: var(--app-text);
+  margin: 0;
+}
+
+body {
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.ant-layout,
+.ant-layout-content,
+.ant-layout-sider {
+  background: transparent !important;
+}
+
+#root,
+main {
+  background: transparent;
+}
+
+.ant-card {
+  background: var(--app-surface) !important;
+  border-color: var(--app-border) !important;
+  box-shadow: var(--app-shadow);
+}
+
+.ant-card .ant-typography,
+.ant-card .ant-typography-title,
+.ant-card .ant-typography-paragraph {
+  color: var(--app-text) !important;
+}
+
+.ant-card .ant-typography-secondary {
+  color: var(--app-text-muted) !important;
+}
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */

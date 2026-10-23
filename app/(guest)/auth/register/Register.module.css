@@ -1,0 +1,39 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+.form {
+  width: 100%;
+}
+
+.full {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.error {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #ff4d4f;
+}
+
+.alert {
+  margin-bottom: 12px;
+}

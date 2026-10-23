@@ -1,0 +1,31 @@
+.page {
+  min-height: calc(100vh - 58px);
+  padding: 24px 16px;
+}
+
+.shell {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.center {
+  min-height: calc(100vh - 58px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+}
+
+.full {
+  width: 100%;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 12px;
+}

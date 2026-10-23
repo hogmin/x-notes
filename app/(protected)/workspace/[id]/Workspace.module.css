@@ -1,0 +1,275 @@
+.mdPreview {
+  min-height: 260px;
+  padding: 16px;
+  border: 1px solid var(--app-border);
+  border-radius: 6px;
+  background: var(--app-surface-2);
+  color: var(--app-text);
+  line-height: 1.65;
+  overflow-x: auto;
+}
+
+.mdPreview > :first-child {
+  margin-top: 0;
+}
+
+.mdPreview > :last-child {
+  margin-bottom: 0;
+}
+
+.mdPreview h1,
+.mdPreview h2,
+.mdPreview h3,
+.mdPreview h4,
+.mdPreview h5,
+.mdPreview h6 {
+  margin: 1.25em 0 0.55em;
+  color: var(--app-text);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.mdPreview h1 {
+  padding-bottom: 0.28em;
+  border-bottom: 1px solid var(--app-border);
+  font-size: 2rem;
+}
+
+.mdPreview h2 {
+  padding-bottom: 0.24em;
+  border-bottom: 1px solid var(--app-border);
+  font-size: 1.5rem;
+}
+
+.mdPreview h3 {
+  font-size: 1.25rem;
+}
+
+.mdPreview h4 {
+  font-size: 1.1rem;
+}
+
+.mdPreview h5,
+.mdPreview h6 {
+  font-size: 1rem;
+}
+
+.mdPreview p {
+  margin: 0 0 1em;
+}
+
+.mdPreview a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.mdPreview blockquote {
+  margin: 1em 0;
+  padding: 0.1em 0 0.1em 1em;
+  border-left: 4px solid var(--app-border);
+  color: var(--app-text-muted);
+}
+
+.mdPreview hr {
+  height: 1px;
+  margin: 1.5em 0;
+  border: 0;
+  background: var(--app-border);
+}
+
+.mdPreview table {
+  margin: 1em 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mdPreview th,
+.mdPreview td {
+  border: 1px solid var(--app-border);
+  padding: 8px;
+}
+
+.mdPreview th {
+  background: var(--app-surface);
+  font-weight: 700;
+}
+
+.mdPreview ul,
+.mdPreview ol {
+  margin: 0 0 1em;
+  padding-left: 1.5rem;
+}
+
+.mdPreview li + li {
+  margin-top: 0.25em;
+}
+
+.mdPreview code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95em;
+  padding: 0.16em 0.34em;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--app-border) 45%, transparent);
+}
+
+.mdPreview pre {
+  margin: 1em 0;
+  padding: 12px;
+  overflow-x: auto;
+  border: 1px solid var(--app-border);
+  border-radius: 6px;
+  background: var(--app-surface);
+}
+
+.mdPreview pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.layout {
+  position: relative;
+  min-height: calc(100vh - 58px);
+  background: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sider {
+  padding: 16px;
+  background: var(--app-surface) !important;
+  border-right: 1px solid var(--app-border);
+  overflow: auto;
+}
+
+.resizeHandle {
+  width: 8px;
+  cursor: col-resize;
+  background: transparent;
+  border-right: 1px solid var(--app-border);
+  transition: background-color 120ms ease;
+}
+
+.resizeHandle:hover {
+  background: color-mix(in srgb, var(--app-border) 55%, transparent);
+}
+
+.content {
+  padding: 16px;
+  min-width: 0;
+  background: transparent;
+}
+
+.expandButton {
+  margin-bottom: 12px;
+}
+
+.sidebarHeader,
+.sectionHeader,
+.itemRow {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.sidebarHeader,
+.sectionHeader {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sidebarTitle {
+  min-width: 0;
+  margin: 0 !important;
+  overflow-wrap: break-word;
+  word-break: normal;
+  line-height: 1.2 !important;
+}
+
+.sidebarActions,
+.sectionActions,
+.itemActions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.sidebarActions,
+.sectionActions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.itemRow {
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.itemTitle {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.itemActions {
+  align-items: center;
+}
+
+.sider[data-compact="true"] .sidebarHeader,
+.sider[data-compact="true"] .sectionHeader,
+.sider[data-compact="true"] .itemRow {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.sider[data-compact="true"] .sidebarActions,
+.sider[data-compact="true"] .sectionActions,
+.sider[data-compact="true"] .itemActions {
+  flex-direction: column;
+  width: 100%;
+}
+
+.sider[data-compact="true"] .sidebarActions button,
+.sider[data-compact="true"] .sectionActions button,
+.sider[data-compact="true"] .itemActions button {
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+}
+
+.full {
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.list {
+  max-height: calc(100vh - 280px);
+  overflow: auto;
+}
+
+.activeItem {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.muted {
+  opacity: 0.7;
+}
